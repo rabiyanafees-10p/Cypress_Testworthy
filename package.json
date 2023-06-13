@@ -1,0 +1,22 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chrome-ext-downloader": "^1.0.4",
+    "cypress": "^10.11.0",
+    "cypress-commands": "^3.0.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^2.0.1"
+  },
+  "ChromeWebSecurity": false,
+  "dependencies": {
+    "cypress-downloadfile": "^1.2.3"
+  }
+}

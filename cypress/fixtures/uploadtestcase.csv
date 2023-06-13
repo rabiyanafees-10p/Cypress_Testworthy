@@ -1,0 +1,218 @@
+Id,Title,Estimate,Priority,Type,References,Section,Smoke,Regression,Reviewed by QA Lead,Reviewed by QA Manager,Reviewed by PM,To Automate,Automated,Module,To be Moved,Disabled,Steps (Expected),Steps (Steps),Test Data,Preconditions,Created By,Created On,Updated By,Updated On,Desc,Bdd_gherkin,Cucumber_tags,Milestone
+,"On Personal info. screen after ""Save Changes"" and ""Cancel"" CTA a separator line is given and after the separator Phone Number label with Add' link is given",,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,No,No,,,,,,,,,"On Personal info. screen after ""Save Changes"" and ""Cancel"" CTA a separator line is given and after the separator Phone Number label with Add' link is given
+Design: https://app.zeplin.io/project/61fc0245ad1ec4adaa89dcd1/screen/62d15ea274148a12071f13b2","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen",https://app.zeplin.io/project/61fc0245ad1ec4adaa89dcd1/screen/62d15ea274148a12071f13b2,,,,,,,,,
+,Make sure the Phone Number Design and Font text and context should be as per design ,,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,No,No,,,,,,,,," Phone Number Design and Font text and context should be as per design 
+Design: https://app.zeplin.io/project/61fc0245ad1ec4adaa89dcd1/screen/62d15ea1dfd3d1135f77b7d3","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen",https://app.zeplin.io/project/61fc0245ad1ec4adaa89dcd1/screen/62d15ea1dfd3d1135f77b7d3,,,,,,,,,
+,"On tapping ""Add"" link, User should redirect into Phone number input field",,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,Yes,Yes,,,,,,,,,"On tapping ""Add"" link, User should redirect into Phone number input field","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen",,,,,,,,,,
+,Make sure the Design and Description should be as per design ,,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,No,No,,,,,,,,,"Make sure the Design and Description should be as per design 
+Design: https://app.zeplin.io/project/61fc0245ad1ec4adaa89dcd1/screen/62d15ea1dfd3d1135f77b7d3","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.",Design: https://app.zeplin.io/project/61fc0245ad1ec4adaa89dcd1/screen/62d15ea1dfd3d1135f77b7d3,,,,,,,,,
+,Make sure Phone number is a mandatory field  and accepts only numeric data,,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,No,No,,,,,,,,,"Phone number is a mandatory field  and accepts only numeric data
+Design: https://app.zeplin.io/project/61fc0245ad1ec4adaa89dcd1/screen/62d15ea1dfd3d1135f77b7d3","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.",Design: https://app.zeplin.io/project/61fc0245ad1ec4adaa89dcd1/screen/62d15ea1dfd3d1135f77b7d3,,,,,,,,,
+,Make sure max. character length is describe against the phone no. field,,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,No,No,,,,,,,,,Max. character length is describe against the phone no. field,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.",,,,,,,,,,
+,Make sure validation is applied in case phone no. is invalid (not meeting the 10  digits criteria and exceeding 10 digits),,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,No,No,,,,,,,,,Validation is applied in case phone no. is invalid (not meeting the 10  digits criteria and exceeding 10 digits),"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.",,,,,,,,,,
+,"Make sure phone masking is applied on screen while typing/ entering number, masking is also available ",,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,No,No,,,,,,,,,"Phone masking is applied on screen while typing/ entering number, masking is also available ","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Enter Phone no.",,,,,,,,,,
+,"Verify If input does not meet this validation, show error on tapping anywhere outside of field",,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,No,Yes,,,,,,,,,"If input does not meet this validation, show error on tapping anywhere outside of field","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.",,,,,,,,,,
+,Make sure Save changes should become active only once content is present in 10-digit phone format,,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,,Yes,,,,,,,,,Save changes should become active only once content is present in 10-digit phone format,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.",,,,,,,,,,
+,"User can cancel the process at any time on by tapping on ""cancel"" link",,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,,Yes,,,,,,,,,"User can cancel the process at any time on by tapping on ""cancel"" link and here unsaved chnages will not save on personal info","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+",,,,,,,,,,
+,Make sure on cancel a prompt message appear that take confirmation and  based on selection next action will perform,,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,,Yes,,,,,,,,,On cancel a prompt message appear that take confirmation and  based on selection next action will perform,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.",,,,,,,,,,
+,"On tapping on Save changes, On the backend: Send a verification SMS to the phone number entered",,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,Yes,Yes,,,,,,,,,"On Save changes, On the backend: Send a verification SMS to the phone number entered","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes",,,,,,,,,,
+,"Make sure confirmation code field  appears once user tap on save Changes and after that ""verification "" CTA is given in disable mode",,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,,,,,,,,,,,"Confirmation code field  appears once user tap on save Changes and after that ""verification "" CTA is given in disable mode","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes",,,,,,,,,,
+,Make sure confirmation code field  is mandatory ,,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,,,,,,,,,,,confirmation code field  is mandatory ,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes",,,,,,,,,,
+,"Make sure without confirmation code phone . No. is not saved and phone number is  ""verification pending ""state",,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,,Yes,,,,,,,,,"Confirmation code Phone No. is not saved and phone number is  ""verification pending ""state","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes",,,,,,,,,,
+,Make  sure there should be resend code link should be available in order to resend the code against the registered mobile no.,,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,,Yes,,,,,,,,,There should be resend code link should be available in order to resend the code against the registered mobile no.,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes
+> Tap on resend link",,,,,,,,,,
+,Make sure during confirmation code phone number appear as read-only and edit link is given ,,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,,,,,,,,,,,During confirmation code phone number appear as read-only and edit link is given ,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes
+> Tap on Eidt ",,,,,,,,,,
+,in order to edit phone number  make sure resend code should send against the updated mobile no. Only. ,,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,,Yes,,,,,,,,,in order to edit phone number make sure resend code should send against the updated mobile no. Only. ,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes
+> Tap on Eidt ",,,,,,,,,,
+,Make sure in case of update phone no. previous phone no. will not received any confirmation code.,,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,,Yes,,,,,,,,,In case of update phone no. previous phone no. will not received any confirmation code.,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes
+> Tap on Eidt ",,,,,,,,,,
+,Make sure Confirmation code field has some max character criteria,,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,,,,,,,,,,,Confirmation code field has some max character criteria,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes
+> Tap on Eidt ",,,,,,,,,,
+,make sure validation should be integrated against the confirmation field,,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,,,,,,,,,,,Validation should be integrated against the confirmation field,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.",,,,,,,,,,
+,Make sure invalid confirmation code validation is applicable ,,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,,Yes,,,,,,,,, invalid confirmation code validation is applicable ,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes",,,,,,,,,,
+,Make sure confirmation code should be unique,,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,,Yes,,,,,,,,,Confirmation code should be unique,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.",,,,,,,,,,
+,make sure in case two confirmation code is received against a number so recent code will work and previous should be expired (treated as invalid) ,,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,,Yes,,,,,,,,,In case two confirmation code is received against a number so recent code will work and previous should be expired (treated as invalid) ,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes
+> Tap on resend link",,,,,,,,,,
+,"Make sure on entering code in Confirmation code field, ""Verify"" button should become active",,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,,,,,,,,,,,"On entering code in Confirmation code field, ""Verify"" button should become active","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Enter Phone no.",,,,,,,,,,
+,"Make sure once user tap on Verification CTA, user should redirects to Date and Time flow
+",,P1 - Must Test,,CDEM-31,Self Tour - Verify Phone Number,Yes,Yes,,,,,,,,,"once user tap on Verification CTA, user should redirects to Date and Time flow
+","> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes
+> Tap on resend link",,,,,,,,,,
+,Make sure Tapping Edit phone number should open the Phone number field in blank active state and restart the verification flow,,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,,,,,,,,,,,Tapping Edit phone number should open the Phone number field in blank active state and restart the verification flow,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes
+> Tap on resend link",,,,,,,,,,
+,Make user if user tap on cross or back button from mobile it close the personal info. screen ,,P2 - Should Test,,CDEM-31,Self Tour - Verify Phone Number,,,,,,,,,,,If user tap on cross or back button from mobile it close the personal info. screen ,"> Launch the APP
+> Tap on the ""Allow while using App"" location permission option
+> Tap on Map / List view
+>Tap on any Home
+>After redirecting to detail screen, Tap on Request Tour CTA screen
+> Tap on Add Phone. No.
+> Add Phone No. 
+> Tap on save changes
+> Tap on resend link",,,,,,,,,,

@@ -1,0 +1,10 @@
+{
+  "validCredentials": {
+    "username": "rabiya.nafees@10pearls.com",
+    "password": "Test@123"
+  },
+  "invalidCredentials": {
+    "username": "ra.nafees@10pearls.com",
+    "password": "Test@1"
+  }
+}
