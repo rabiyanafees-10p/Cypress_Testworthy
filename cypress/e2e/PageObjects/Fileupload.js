@@ -14,11 +14,6 @@ class fileupload
       
       const filePath = 'uploadtestcase.csv';
       cy.get('#csvFileName').attachFile(filePath);
-      //cy.get('#csvFileName').should('contain.text','uploadtestcase.csv');
-      //cy.contains('Provided file doesn').should('be.visible'); File is empty or not attach validation
-
-      //cy.get('#SectionId').click({force: true});
-      //cy.get('[data-value="37729"] > .#SectionId').click({force: true});
       cy.get('#btn-next').click();
       cy.wait(4000);
       cy.contains('#exampleModalLabel').should('be.visible');

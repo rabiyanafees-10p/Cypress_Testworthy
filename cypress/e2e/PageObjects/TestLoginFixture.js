@@ -1,4 +1,4 @@
-class Test {
+class FixtureLogin {
 
   get emailInput() {
     return cy.get('#Email');
@@ -35,4 +35,4 @@ class Test {
 
 }
 
-export default Test;
+export default FixtureLogin;

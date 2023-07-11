@@ -1,17 +1,13 @@
 /// <reference types="Cypress"/>
 
-class selectProject
-{
-  selectProjectTestworthy()
-  {
-  cy.wait(4000);
-  cy.get('.carousel-card').should('be.visible');
-  cy.scrollTo('bottom');
-    //cy.get(':nth-child(3) > .carousel-card').click();
-    cy.contains('a', 'TasteBuddy').click();
+class SelectProject {
+  selectProjectTestworthy(projectName) {
+    cy.wait(4000);
+    cy.get('.carousel-card').should('be.visible');
+    cy.scrollTo('bottom');
+    cy.contains('a', projectName).click();
+    cy.get('.pn-link').should('be.visible');
+  }
+}
 
-  cy.get('.pn-link ').should('be.visible')
-
-}}
-
-    export default selectProject
+export default SelectProject;
