@@ -41,7 +41,7 @@ class TestRun {
       cy.log('An error occurred: ', error);
     }
 
-    /// Test Run Execution
+// Test Run Execution
 
    cy.wait(7000);
    //Select first record in TestRun screen
@@ -51,7 +51,7 @@ class TestRun {
       .click({ force: true });
          cy.wait(4000);
 
-       cy.get('#dropdownMenuButton_422165').click();
+       cy.get('.btn-status').click({ force: true });;
        cy.get('a[data-status="1"]').scrollIntoView();
        cy.get('a[data-status="1"]').click();
 

@@ -6,5 +6,8 @@
   "invalidCredentials": {
     "username": "ra.nafees@10pearls.com",
     "password": "Test@1"
-  }
+  },
+
+  "projectName": "TasteBuddy"
+
 }

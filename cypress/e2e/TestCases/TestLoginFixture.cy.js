@@ -1,12 +1,12 @@
 //import LoginPage from './testloginfixture';
-import Test from "../PageObjects/testloginfixture";
+import FixtureLogin from "../PageObjects/testloginfixture";
 
 describe('Login Tests', () => {
   let loginPage;
   let loginData;
 
   before(() => {
-    loginPage = new Test();
+    loginPage = new FixtureLogin();
 
     cy.fixture('login').then((data) => {
       loginData = data;

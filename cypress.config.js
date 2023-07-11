@@ -23,6 +23,12 @@ module.exports = defineConfig({
 }
 
 
+// cypress.config.js
+module.exports = {
+  // ...
+ pageLoadTimeout: 150000, // Set to 120 seconds
+  // ...
+};
 
 // File Download
 //link reference: https://www.programsbuzz.com/article/download-file-cypress

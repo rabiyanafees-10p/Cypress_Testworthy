@@ -29,13 +29,13 @@ class Milestone {
   editMilestone()
   {
   const milestoneName = Cypress.env('globalVariable');
+        cy.wait(4000);
+        cy.get(':nth-child(2) > .pn-link').should('be.visible').click();
 
-     cy.get(':nth-child(2) > .pn-link').click();
      cy.wait(4000);
      cy.log(`The Milestone name is: ${milestoneName}`);
 
-     cy.xpath(`(//a[contains(text(),'${milestoneName}')])[2]`)
-       .first().dblclick({ force: true }); // Trigger the mouseover event on the container element
+     cy.xpath(`(//a[contains(text(),'${milestoneName}')])[2]`).first().dblclick({ force: true }); // Trigger the mouseover event on the container element
 
      cy.get('.icon-ic_edit').click();
 
@@ -76,9 +76,6 @@ class Milestone {
         cy.xpath(`(//a[contains(@id,'btnDeleteMilestone')])[1]`).click();
         cy.xpath(`(//button[contains(@id,'btnCloseCrossDelete')])[1]`).click({ force: true });
         //cy.get('#ms-deleted > .modal-dialog > .modal-content > .modal-body-container > :nth-child(1) > .modal-header > #btnCloseCrossDelete > .close_cross').click();
-
-        //assertions for verifying teh record is deleted Successfully
-
 
       }
 

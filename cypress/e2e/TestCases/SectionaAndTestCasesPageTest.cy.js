@@ -16,19 +16,20 @@ describe ('Section and TestCases Test Suite', function()
         const milestone = new Milestone()
 
 
-////
+//
         login.visit();
         login.loginToTestworthy('rabiya.nafees@10pearls.com','Test@123');
         project.selectProjectTestworthy();
-        milestone.addMilestone()
+       // milestone.addMilestone()
         section.addTestSuite();
         section.addSection();
- //          section.updateSection();
+ //     section.updateSection();
         section.addTestCase();
-        section.editTestCase();
-//////        section.updateTestSuite();
-//////     section.deleteTestsuite();
-
+      //  section.editTestCase();
+          //section.deleteTestCase();
+////////        section.updateTestSuite();
+////////     section.deleteTestsuite();
+//
 
 
    

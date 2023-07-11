@@ -11,7 +11,7 @@ describe (' TestRun Test Suite', function()
     {
         const login = new loginPage()
         const project = new selectProject()
-         const milestone = new Milestone()
+        const milestone = new Milestone()
         const section = new sectioandTestcases ()
         const testPlan = new TestPlan()
 
@@ -19,8 +19,12 @@ describe (' TestRun Test Suite', function()
         login.loginToTestworthy('rabiya.nafees@10pearls.com','Test@123');
         project.selectProjectTestworthy();
         milestone.addMilestone()
+        section.addTestSuite();
         section.addSection();
+        section.addTestCase();
         testPlan.addTestPlan();
+        //testPlan.editTestPlan();
+         testPlan.deleteTestPlan();
     })
 
 
