@@ -46,25 +46,38 @@ describe('Testworthy Execution of Add, Edit, Delete Cases', function() {
       });
 
       milestone.addMilestone();
+      cy.log('Milestone Added');
       section.addTestSuite();
+       cy.log('TestSuite Added');
       section.addSection();
+       cy.log('Section Added');
       section.addTestCase();
+     cy.log('TestCase Added');
       testPlan.addTestPlan();
+       cy.log('TestPlan Added');
       run.AddTestRun();
+       cy.log('TestRun Added');
 
       // Update Case Execution
       milestone.editMilestone();
+      cy.log('Milestone Updated');
       section.updateTestSuite();
+      cy.log('TestSuite Updated');
       //section.updateSection(); //mousehover click is some how not working
       section.editTestCase();
+       cy.log('TestCase Updated');
       testPlan.editTestPlan();
+       cy.log('TestPlan Updated');
       //report.reportSelection1();
 
       // Delete Case Execution
       testPlan.deleteTestPlan();
+        cy.log('TestPlan Deleted');
       //section.deleteTestCase(); // Some issue appears to identify icon from mouse hover
       section.deleteTestsuite();
+        cy.log('Testsuite Deleted');
       milestone.deleteMilestone();
+      cy.log('Milestone Deleted');
     });
   });
 });
