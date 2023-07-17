@@ -77,7 +77,7 @@ deleteTestPlan()
     const testPlanSelection = Cypress.env('testPlan');
     Cypress.env('testPlan', testPlanSelection);
      cy.log(`The Test plan name is: ${testPlanSelection}`);
-    cy.wait(1000);
+    cy.wait(8000);
     cy.get(':nth-child(2) > .container-fluid').click();
      cy.get(':nth-child(4) > .pn-link').click();
      cy.wait(4000);
