@@ -47,7 +47,14 @@ editTestPlan() {
   Cypress.env('testPlan', testPlanSelection);
   cy.log(`The Test plan name is: ${testPlanSelection}`);
 
-  cy.get(':nth-child(4) > .pn-link').click();
+  cy.wait(4000);
+  cy.get(':nth-child(2) > .container-fluid').click();
+  cy.get(':nth-child(4) > .pn-link').then(($element) => {
+    cy.wrap($element)
+      .should('exist')
+      .click();
+  });
+
   cy.wait(4000);
 
   cy.get('.complete-li.test-plan-complete-list').first().find('a.text.pill').click({ force: true });
@@ -70,7 +77,8 @@ deleteTestPlan()
     const testPlanSelection = Cypress.env('testPlan');
     Cypress.env('testPlan', testPlanSelection);
      cy.log(`The Test plan name is: ${testPlanSelection}`);
-
+    cy.wait(1000);
+    cy.get(':nth-child(2) > .container-fluid').click();
      cy.get(':nth-child(4) > .pn-link').click();
      cy.wait(4000);
 
@@ -88,7 +96,9 @@ deleteTestPlan()
      cy.xpath("//button[@id='ConfirmDelete']").click({ force: true });
      //cy.get('#ms-deleted > .modal-dialog > .modal-content > .modal-body-container > :nth-child(1) > .modal-header > .close > .close_cross').click({ force: true });
 
-    cy.get('.modal-dialog .modal-header .close').click();
+   // cy.get('.modal-dialog .modal-header .close').click();
+   cy.get('.header-nav > ul').dblclick({ force: true });
+
 });
 
 }

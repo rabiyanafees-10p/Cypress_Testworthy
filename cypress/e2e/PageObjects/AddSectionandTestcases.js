@@ -15,7 +15,7 @@ class SectionAndTestcases {
       .should('be.visible')
       .click({ force: true });
 
-    cy.get('#txtAddEditTestSuiteTitle').then(($input) => {
+    cy.get('#txtAddEditTestSuiteTitle').should('be.visible').then(($input) => {
       cy.wrap($input)
         .type(testSuiteName)
         .should('have.value', testSuiteName);
@@ -45,8 +45,8 @@ class SectionAndTestcases {
      cy.log(`The test suite name is ${updateTestSuiteName}`);
      cy.xpath(`//a[contains(text(), '${updateTestSuiteName}')]`).dblclick({ force: true });   // Selecting testsuite Created record
 
-     //cy.get('#editTestSuite > .icon-ic_edit').should('be.visible').dblclick({ force: true });
-     cy.get('#editTestSuite > .icon-ic_edit').click({ force: true });
+     //cy.get('#editTestSuite > .icon-ic_edit').click({ force: true });
+     cy.xpath('//*[@id="editTestSuite"]/i').should('be.visible').dblclick({ force: true });
      cy.wait(4000);
       //Update Tessuite Name
            cy.get('#txtAddEditTestSuiteTitle')
@@ -167,17 +167,17 @@ class SectionAndTestcases {
       const updateTestCaseTitle = Cypress.env('testcaseTitle'); // Get the test case title
 
       cy.wait(4000);
-     cy.xpath('//a[contains(text(),"Test Suites & Cases")]').eq(1).click({ force: true });
+      cy.xpath('//a[contains(text(),"Test Suites & Cases")]').eq(1).click({ force: true });
       cy.wait(4000);
       cy.log(`The testsuite Name is ${testsuite}`);
       cy.xpath(`//a[contains(text(), '${testsuite}')]`).dblclick({ force: true }); // Selecting test suite created record
 
       // Select the Testcase to update
       cy.log(`The test case name is ${updateTestCaseTitle}`);
-
-    cy.get('div.display-table.border-bottom.display-table-icons.row.tooltipJS')
-      .click({ force: true })  // Example action: click on the element
-      .should('be.visible');  // Example assertion: check if the element is visible
+      cy.wait(4000);
+      cy.get('div.display-table.border-bottom.display-table-icons.row.tooltipJS')
+        .click({ force: true })  // Example action: click on the element
+        .should('be.visible');  // Example assertion: check if the element is visible
 
     cy.get('.case-title').click({ force: true });
     cy.get('.icon-ic_edit').click({ force: true });  // Click on the edit link

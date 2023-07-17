@@ -13,8 +13,8 @@ class Milestone {
     cy.get('#Name').type(name);
 
     cy.get('#Description').type('Automated Milestone Description').should('have.value', 'Automated Milestone Description');
-    cy.get('#dpStartDate').type('2023-06-05').should('have.value', '2023-06-05');
-    cy.get('#dpEndDate').type('2023-06-12').should('have.value', '2023-06-12');
+    cy.get('#dpStartDate').type('2023-07-05').should('have.value', '2023-06-05');
+    cy.get('#dpEndDate').type('2023-10-12').should('have.value', '2023-06-12');
     cy.xpath('//button[@id="btnAddEditMilestone"]').should('have.text', 'Add Milestone').click();
     cy.wait(4000);
 

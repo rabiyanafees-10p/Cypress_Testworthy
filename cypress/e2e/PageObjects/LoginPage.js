@@ -30,9 +30,6 @@ class loginPage
 
 
 
-
-
-
   /* //code for bypassing exceptions Code 1
     cy.on('uncaught:exception', (err, runnable) => {
         expect(err.message).to.include('something about the error')
