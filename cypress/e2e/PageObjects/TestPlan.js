@@ -78,8 +78,8 @@ deleteTestPlan()
     Cypress.env('testPlan', testPlanSelection);
      cy.log(`The Test plan name is: ${testPlanSelection}`);
     cy.wait(8000);
-    cy.get(':nth-child(2) > .container-fluid').click();
-     cy.get(':nth-child(4) > .pn-link').click();
+    cy.get(':nth-child(2) > .container-fluid').click({ force: true });
+     cy.get(':nth-child(4) > .pn-link').click({ force: true });
      cy.wait(4000);
 
     cy.get('.complete-li.test-plan-complete-list').first().find('a.text.pill').click({ force: true });
