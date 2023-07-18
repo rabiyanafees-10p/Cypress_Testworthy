@@ -97,7 +97,7 @@ deleteTestPlan()
      //cy.get('#ms-deleted > .modal-dialog > .modal-content > .modal-body-container > :nth-child(1) > .modal-header > .close > .close_cross').click({ force: true });
 
    // cy.get('.modal-dialog .modal-header .close').click();
-   cy.get('.header-nav > ul').dblclick({ force: true });
+   //cy.get('.header-nav > ul').dblclick({ force: true });
 
 });
 

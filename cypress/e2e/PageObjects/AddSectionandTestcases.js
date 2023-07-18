@@ -66,12 +66,15 @@ class SectionAndTestcases {
   deleteTestsuite()
   {
     const deleteTestsuiteName = Cypress.env('testSuite');  //Cypress.env('testSuite', testSuiteName);
+    cy.wait(4000);
+    cy.get(':nth-child(2) > .container-fluid').dblclick({ force: true });
+    cy.wait(4000);
     cy.get(':nth-child(3) > .pn-link').click({ force: true });
     cy.wait(4000);
     cy.log(`The test suite name is ${deleteTestsuiteName}`);
-    cy.get('#dropdownMoreOptionsTestSuite').click();
+    cy.get('#dropdownMoreOptionsTestSuite').click({ force: true });
     cy.xpath(`//span[contains(text(),'Delete Suite')]`).click();
-    cy.get('#btnDeleteSuite').click();
+    cy.get('#btnDeleteSuite').click({ force: true });
     cy.xpath('//body/div[2]/div[2]/div[2]/section[5]/div[8]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]/span[1]').click({ force: true });
     //cy.get(':nth-child(2) > .modal-header > .close > .close_cross').click({ force: true });
 

@@ -68,13 +68,16 @@ class Milestone {
    deleteMilestone()
       {
         const milestoneName = Cypress.env('globalVariable');
+        cy.wait(4000);
+          cy.get(':nth-child(2) > .container-fluid').dblclick({ force: true });
+            cy.wait(4000);
         cy.xpath("(//li//a[contains(text(),'Milestone')])[1]").click({force:true});
         cy.log(`The Milestone name is: ${milestoneName}`);
         cy.xpath(`(//a[contains(text(),'${milestoneName}')])[2]`).dblclick({ force: true });
         cy.xpath(`//span[contains(@id,'milestoneEllipsesDropdown')]`).click();
         cy.xpath(`//a[contains(@id,'deleteMilestone')]`).click();
         cy.xpath(`(//a[contains(@id,'btnDeleteMilestone')])[1]`).click();
-        cy.xpath(`(//button[contains(@id,'btnCloseCrossDelete')])[1]`).click({ force: true });
+        //cy.xpath(`(//button[contains(@id,'btnCloseCrossDelete')])[1]`).click({ force: true });
         //cy.get('#ms-deleted > .modal-dialog > .modal-content > .modal-body-container > :nth-child(1) > .modal-header > #btnCloseCrossDelete > .close_cross').click();
 
       }
