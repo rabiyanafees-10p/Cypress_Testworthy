@@ -60,7 +60,7 @@ class Milestone {
         cy.get('#Description').should('have.value', updatedMilestoneDescription);
       });
 
-    cy.get('#btnEditMilestone').click({force:true})
+       cy.get('#btnEditMilestone').click({force:true})
 
 
   }

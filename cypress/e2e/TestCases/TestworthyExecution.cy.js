@@ -72,10 +72,10 @@ describe('Testworthy Execution of Add, Edit, Delete Cases', function() {
 
       // Delete Case Execution
       testPlan.deleteTestPlan();
-        cy.log('TestPlan Deleted');
+      cy.log('TestPlan Deleted');
       //section.deleteTestCase(); // Some issue appears to identify icon from mouse hover
       section.deleteTestsuite();
-        cy.log('Testsuite Deleted');
+      cy.log('Testsuite Deleted');
       milestone.deleteMilestone();
       cy.log('Milestone Deleted');
     });
