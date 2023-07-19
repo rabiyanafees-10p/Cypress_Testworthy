@@ -66,8 +66,8 @@ class SectionAndTestcases {
   deleteTestsuite()
   {
     const deleteTestsuiteName = Cypress.env('testSuite');  //Cypress.env('testSuite', testSuiteName);
-    cy.wait(4000);
-    cy.get(':nth-child(2) > .container-fluid').dblclick({ force: true });
+    cy.wait(8000);
+    cy.xpath('//body[1]/div[2]/div[1]/div[1]/ul[1]').dblclick({ force: true });
     cy.wait(4000);
     cy.get(':nth-child(3) > .pn-link').click({ force: true });
     cy.wait(4000);
