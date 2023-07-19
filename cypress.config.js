@@ -22,6 +22,10 @@ module.exports = defineConfig({
  //restrict to execute cases on every change
 }
 
+{
+  "defaultCommandTimeout": 8000
+}
+
 
 // cypress.config.js
 module.exports = {
