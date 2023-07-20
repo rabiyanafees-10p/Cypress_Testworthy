@@ -24,7 +24,7 @@ module.exports = defineConfig({
 
 module.exports = {
   // Other configurations...
-  defaultCommandTimeout: 8000
+  defaultCommandTimeout: 10000
 };
 
 
@@ -32,7 +32,7 @@ module.exports = {
 // cypress.config.js
 module.exports = {
   // ...
- pageLoadTimeout: 8000, // Set to 150 seconds
+ pageLoadTimeout: 10000, // Set to 150 seconds
   // ...
 };
 

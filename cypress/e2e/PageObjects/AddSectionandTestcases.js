@@ -15,7 +15,7 @@ class SectionAndTestcases {
       .should('be.visible')
       .click({ force: true });
 
-    cy.get('#txtAddEditTestSuiteTitle').should('be.visible').then(($input) => {
+    cy.get('#txtAddEditTestSuiteTitle').scrollIntoView().should('be.visible').then(($input) => {
       cy.wrap($input)
         .type(testSuiteName)
         .should('have.value', testSuiteName);
@@ -44,15 +44,14 @@ class SectionAndTestcases {
      cy.wait(4000);
      cy.log(`The test suite name is ${updateTestSuiteName}`);
      cy.xpath(`//a[contains(text(), '${updateTestSuiteName}')]`).dblclick({ force: true });   // Selecting testsuite Created record
-
+     cy.wait(4000);
      //cy.get('#editTestSuite > .icon-ic_edit').click({ force: true });
      cy.xpath('//*[@id="editTestSuite"]/i').should('be.visible').dblclick({ force: true });
-     cy.wait(4000);
+     cy.wait(6000);
       //Update Tessuite Name
            cy.get('#txtAddEditTestSuiteTitle')
            .invoke('val')
            .then((currentValue) => {
-
              const updatedTestsuite = `${currentValue} Update`;
              cy.get('#txtAddEditTestSuiteTitle').clear().type(updatedTestsuite);
              cy.get('#txtAddEditTestSuiteTitle').should('have.value', updatedTestsuite);
@@ -72,11 +71,14 @@ class SectionAndTestcases {
     cy.get(':nth-child(3) > .pn-link').click({ force: true });
     cy.wait(4000);
     cy.log(`The test suite name is ${deleteTestsuiteName}`);
+    cy.xpath(`//a[contains(text(), '${deleteTestsuiteName}')]`).dblclick({ force: true });
     cy.get('#dropdownMoreOptionsTestSuite').click({ force: true });
     cy.xpath(`//span[contains(text(),'Delete Suite')]`).click();
     cy.get('#btnDeleteSuite').click({ force: true });
     cy.xpath('//body/div[2]/div[2]/div[2]/section[5]/div[8]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]/span[1]').click({ force: true });
     //cy.get(':nth-child(2) > .modal-header > .close > .close_cross').click({ force: true });
+    cy.get('[aria-label="Close"]').click({ force: true }); // close the deleted successfully modal
+
 
 
   }
