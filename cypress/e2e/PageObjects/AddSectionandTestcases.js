@@ -221,8 +221,6 @@ deleteTestCase ()
       .find('span.delete-icon.tooltipJS')
       .click();
 
-
-
 }
 
 

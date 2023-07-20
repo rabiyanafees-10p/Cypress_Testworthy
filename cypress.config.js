@@ -1,50 +1,23 @@
 const { defineConfig } = require("cypress");
+const { downloadFile } = require('cypress-downloadfile/lib/addPlugin');
 
 module.exports = defineConfig({
+  env: {
+    CYPRESS_STDOUT_WIDTH: 1000
+  },
+  chromeWebSecurity: false,
   e2e: {
+    experimentalSessionAndOrigin: true,
+
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      on('task', { downloadFile });
+      // File Download .... //link reference: https://www.programsbuzz.com/article/download-file-cypress
     },
   },
-  
+  watchForFileChanges: false,
+  defaultCommandTimeout: 50000,
+  pageLoadTimeout: 50000,
+
+
 });
-
-{
-  "chromeWebSecurity"; false
-}
-
-{
-  "experimentalSessionAndOrigin"; true
-}
-
-{
- "watchForFileChanges"; false
- //restrict to execute cases on every change
-}
-
-module.exports = {
-  // Other configurations...
-  defaultCommandTimeout: 10000
-};
-
-
-
-// cypress.config.js
-module.exports = {
-  // ...
- pageLoadTimeout: 10000, // Set to 150 seconds
-  // ...
-};
-
-// File Download
-//link reference: https://www.programsbuzz.com/article/download-file-cypress
-const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
-
-module.exports = defineConfig({
-  e2e: {
-    setupNodeEvents(on, config) {
-         on('task', {downloadFile})
-      }
-    }
-})
-
