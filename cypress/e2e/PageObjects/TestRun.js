@@ -41,16 +41,20 @@ class TestRun {
       cy.log('An error occurred: ', error);
     }
 
-// Test Run Execution
+   // Test Run Execution
 
-   cy.wait(7000);
-   //Select first record in TestRun screen
+      //Select first record in TestRun screen
     cy.scrollTo(0, 15);
     cy.xpath('//*[@id="pills-row"]/div[2]/ul[1]/li[1]/div/div[1]/div[1]/label/span[2]/a')
-      .first()
-      .click({ force: true });
-         cy.wait(4000);
+      .first().click({ force: true });
 
+
+      cy.reload();
+      cy.wait(5000);
+      cy.xpath('/html[1]/body[1]/div[2]/div[2]/div[2]/section[1]/div[3]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]')
+         .scrollIntoView().should('be.visible');
+
+       //click on status button appear on Testcase
        cy.get('.btn-status').click({ force: true });;
        cy.get('a[data-status="1"]').scrollIntoView();
        cy.get('a[data-status="1"]').click();

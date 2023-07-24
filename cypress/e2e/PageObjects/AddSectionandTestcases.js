@@ -65,9 +65,6 @@ class SectionAndTestcases {
   deleteTestsuite()
   {
     const deleteTestsuiteName = Cypress.env('testSuite');  //Cypress.env('testSuite', testSuiteName);
-    cy.wait(8000);
-    //cy.xpath('//body[1]/div[2]/div[1]/div[1]/ul[1]').dblclick({ force: true });
-    cy.wait(4000);
     cy.get(':nth-child(3) > .pn-link').click({ force: true });
     cy.wait(4000);
     cy.log(`The test suite name is ${deleteTestsuiteName}`);
@@ -77,7 +74,7 @@ class SectionAndTestcases {
     cy.get('#btnDeleteSuite').click({ force: true });
     cy.xpath('//body/div[2]/div[2]/div[2]/section[5]/div[8]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]/span[1]').click({ force: true });
     //cy.get(':nth-child(2) > .modal-header > .close > .close_cross').click({ force: true });
-    cy.get('[aria-label="Close"]').click({ force: true }); // close the deleted successfully modal
+   // cy.get('[aria-label="Close"]').click({ force: true }); // close the deleted successfully modal
   }
 
 
@@ -160,6 +157,8 @@ class SectionAndTestcases {
     // Set a global variable
     Cypress.env('testCaseVariable', testcaseTitle);
     cy.log(`The test suite name is ${testcaseTitle}`);
+
+    cy.reload();
 }
 
 
