@@ -28,11 +28,15 @@ addTestPlan() {
   cy.get('#btnAddRunAndSelectSuite').click({ force: true });
 
   // Ensure testSuiteSelection is defined and has a value
-  if (testSuiteSelection) {
-    cy.get('#runSuiteId').should('be.visible').select(testSuiteSelection, { force: true });
-  } else {
-    cy.log('testSuiteSelection is undefined or has no value.');
-  }
+ if (testSuiteSelection) {
+   // Wait for the element to become visible
+   cy.get('#runSuiteId').should('be.visible').scrollIntoView().then(() => {
+     // Now select the testSuiteSelection from the dropdown
+     cy.get('#runSuiteId').select(testSuiteSelection);
+   });
+ } else {
+   cy.log('testSuiteSelection is undefined or has no value.');
+ }
 
   cy.get('#btnAddRuns').click({ force: true });
   cy.get('#btnAddEditPlan').click({ force: true });
