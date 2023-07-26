@@ -36,14 +36,11 @@ class Milestone {
      cy.log(`The Milestone name is: ${milestoneName}`);
 
      cy.xpath(`(//a[contains(text(),'${milestoneName}')])[2]`).first().dblclick({ force: true }); // Trigger the mouseover event on the container element
-
      cy.get('.icon-ic_edit').click();
-
       //Update Milestone Name
       cy.get('#Name')
       .invoke('val')
       .then((currentValue) => {
-
         const updatedMilestoneName = `${currentValue} update`;
         cy.get('#Name').clear().type(updatedMilestoneName);
         cy.get('#Name').should('have.value', updatedMilestoneName);
@@ -69,10 +66,10 @@ class Milestone {
       {
         const milestoneName = Cypress.env('globalVariable');
         cy.wait(8000);
-         cy.get(':nth-child(2) > .container-fluid').dblclick({ force: true });
-          cy.wait(4000);
-        cy.get(':nth-child(2) > .container-fluid').dblclick({ force: true });
-
+        cy.reload();
+        cy.get(':nth-child(2) > .container-fluid').should('be.visible').dblclick({ force: true });
+        cy.wait(4000);
+        cy.get(':nth-child(2) > .container-fluid').should('be.visible').dblclick({ force: true });
         cy.xpath("(//li//a[contains(text(),'Milestone')])[1]").click({force:true});
         cy.log(`The Milestone name is: ${milestoneName}`);
         cy.xpath(`(//a[contains(text(),'${milestoneName}')])[2]`).dblclick({ force: true });

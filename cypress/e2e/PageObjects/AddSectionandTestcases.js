@@ -1,7 +1,3 @@
-/// <reference types="Cypress"/>
-//import '../global';
-//import 'D:/cypress/Cypress_Automation/cypress/e2e/global';
-//import globalFunction from './global';
 class SectionAndTestcases {
 
   addTestSuite() {
