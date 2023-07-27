@@ -71,6 +71,8 @@ class SectionAndTestcases {
     cy.xpath('//body/div[2]/div[2]/div[2]/section[5]/div[8]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]/span[1]').click({ force: true });
     //cy.get(':nth-child(2) > .modal-header > .close > .close_cross').click({ force: true });
    // cy.get('[aria-label="Close"]').click({ force: true }); // close the deleted successfully modal
+    cy.wait(4000);
+    cy.get('#test-case-suite-deleted-modal').dblclick({ force: true });
   }
 
 

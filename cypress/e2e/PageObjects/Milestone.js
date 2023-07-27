@@ -65,9 +65,7 @@ class Milestone {
    deleteMilestone()
       {
         const milestoneName = Cypress.env('globalVariable');
-        cy.wait(8000);
-        cy.reload();
-        cy.get(':nth-child(2) > .container-fluid').should('be.visible').dblclick({ force: true });
+
         cy.wait(4000);
         cy.get(':nth-child(2) > .container-fluid').should('be.visible').dblclick({ force: true });
         cy.xpath("(//li//a[contains(text(),'Milestone')])[1]").click({force:true});
